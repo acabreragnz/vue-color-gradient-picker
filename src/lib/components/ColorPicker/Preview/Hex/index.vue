@@ -2,7 +2,7 @@
     <fragment>
         <Input
             :value="hexValue"
-            label="hex"
+            label="HEX"
             @input="changeHex"
             :onFocus="() => inProgress = true"
             :onBlur="() => inProgress = false"

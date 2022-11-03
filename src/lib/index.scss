@@ -15,6 +15,7 @@
         flex-direction: row;
         align-items: center;
         width: 100%;
+        margin-top: 8px;
         margin-bottom: 8px;
         height: 24px;
         padding: 0 16px;
@@ -45,12 +46,12 @@
                 }
 
                 &.liner-gradient {
-                    background: linear-gradient(270deg, #FFFFFF 0%, #1F2667 100%);
+                    background: linear-gradient(180deg, #FFFFFF 0%, gray 100%);
                 }
 
                 &.radial-gradient {
                     margin-left: 8px;
-                    background: radial-gradient(circle, #FFFFFF 0%, #1F2667 100%);
+                    background: radial-gradient(circle, #FFFFFF 0%, gray 100%);
                 }
             }
 
@@ -69,25 +70,25 @@
                 -ms-flex-align: center;
                 align-items: center;
                 position: relative;
-                width: 28px;
-                height: 28px;
-                border: 3px solid #1F2667;
-                border-radius: 18px;
-                margin-right: 54px;
+                width: 56px;
+                height: 56px;
+                border: 2px solid gray;
+                border-radius: 100%;
+                // margin-right: 54px;
 
                 .gradient-degree-center {
                     position: relative;
-                    width: 6px;
-                    height: 22px;
+                    width: 12px;
+                    height: 70px;
                     pointer-events: none;
 
                     .gradient-degree-pointer {
                         position: absolute;
-                        width: 6px;
-                        height: 6px;
-                        top: 2px;
-                        border-radius: 3px;
-                        background: #1F2667;
+                        width: 12px;
+                        height: 12px;
+                        top: 4px;
+                        border-radius: 6px;
+                        background: gray;
                     }
                 }
             }
@@ -127,8 +128,9 @@
             width: 100%;
             height: 160px;
             margin-bottom: 16px;
+            margin-top: 10px;
             position: relative;
-            border-radius: 8px;
+            // border-radius: 8px;
 
             &:hover {
                 cursor: default;
@@ -138,27 +140,27 @@
                 height: 100%;
                 width: 100%;
                 background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-                border-radius: 3px;
+                // border-radius: 3px;
 
                 .picking-area-overlay2 {
                     height: 100%;
                     width: 100%;
                     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
-                    border-radius: 8px;
+                    // border-radius: 4px;
                 }
             }
         }
 
         .preview {
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             margin-bottom: 16px;
 
             .preview-box {
                 box-sizing: border-box;
                 height: 36px;
                 width: 36px;
-                border-radius: 8px;
+                border-radius: 4px;
                 border: 1px solid #EBEDF5;
             }
 
@@ -166,12 +168,12 @@
                 display: flex;
                 flex-direction: column;
                 flex: 1;
-                margin-left: 6px;
+                margin-right: 4px;
 
                 .hue {
                     width: 100%;
                     position: relative;
-                    border-radius: 10px;
+                    border-radius: 4px;
                     margin-bottom: 8px;
                     padding: 0 7px;
                     background-color: red;
@@ -192,7 +194,7 @@
                     position: relative;
                     width: 100%;
                     overflow: hidden;
-                    border-radius: 10px;
+                    border-radius: 4px;
                     height: 14px;
                     cursor: pointer;
 
@@ -210,7 +212,7 @@
                         background: url("assets/images/alpha-background.svg");
                         background-size: auto;
                         background-position: 50% 50%;
-                        border-radius: 10px;
+                        border-radius: 4px;
                         padding: 0 7px;
 
                         .alpha-mask {
@@ -237,6 +239,10 @@
                 width: 100%;
                 position: relative;
             }
+        }
+
+        .gradient.gradient-m-t {
+          margin-top: 20px;
         }
 
         .picker-pointer {

@@ -1,15 +1,5 @@
 <template>
     <div class="picker-area">
-        <Picker
-            :red="red"
-            :green="green"
-            :blue="blue"
-            :hue="hue"
-            :saturation="saturation"
-            :value="value"
-            :updateColor="updateColor"
-        />
-
         <GradientPoints
             v-if="isGradient"
             :type="type"
@@ -21,6 +11,17 @@
             :addPoint="addPoint"
             :removePoint="removePoint"
         />
+
+        <Picker
+            :red="red"
+            :green="green"
+            :blue="blue"
+            :hue="hue"
+            :saturation="saturation"
+            :value="value"
+            :updateColor="updateColor"
+        />
+
 
         <div class="preview">
             <Preview

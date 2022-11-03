@@ -1,12 +1,12 @@
 <template>
   <div id="app" :style="{ display: 'flex', textAlign: 'center' }">
     <div>
-      <ColorPicker
+      <!-- <ColorPicker
           :color="color"
           :onStartChange="color => onChange(color, 'start')"
           :onChange="color => onChange(color, 'change')"
           :onEndChange="color => onChange(color, 'end')"
-      />
+      /> -->
     </div>
     <div>
       <ColorPicker

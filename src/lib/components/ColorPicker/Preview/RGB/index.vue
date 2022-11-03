@@ -21,7 +21,7 @@
     <RGBItem
         :value="parseInt(alpha * 100, 10)"
         type="number"
-        label="Alpha"
+        label="A"
         :onChange="value => changeValue('alpha', value)"
     />
 </fragment>

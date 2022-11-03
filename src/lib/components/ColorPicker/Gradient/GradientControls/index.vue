@@ -20,11 +20,11 @@
                     <div class="gradient-degree-pointer" />
                 </div>
             </div>
-            <div class="gradient-degree-value">
+            <!-- <div class="gradient-degree-value">
                 <p>
                     {{degree}}&#176;
                 </p>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

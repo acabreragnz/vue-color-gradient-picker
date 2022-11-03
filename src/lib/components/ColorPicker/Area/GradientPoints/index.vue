@@ -1,6 +1,6 @@
 <template>
     <div
-        class="gradient"
+        class="gradient gradient-m-t"
         :style="pointsStyle"
         @click="pointsContainerClick"
     >
